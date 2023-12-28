@@ -1,14 +1,15 @@
-# Approach: Using a Dictionary
+# Approach: 
+Using a dictionary to store numbers as Key-Pair Values. Lookup will take O(1) as we are using keys to access the values.
 ---
 
 # Solution:
+```
 def twoSum(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
-
         store = {}
 
         # loop through the array to find the other number
@@ -22,6 +23,7 @@ def twoSum(self, nums, target):
             else:
                 # insert the cur value as key, cur index as value into the dictionary
                 store[nums[index]] = index
+```
 ---
 
 # Time Complexity
