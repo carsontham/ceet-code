@@ -1,3 +1,5 @@
+# Qns: https://leetcode.com/problems/two-sum/
+
 # Approach:
 Using a dictionary to store numbers as Key-Pair Values. Lookup will take O(1) as we are using keys to access the values.
 
