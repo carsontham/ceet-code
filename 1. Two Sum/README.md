@@ -2,7 +2,7 @@
 Using a dictionary to store numbers as Key-Pair Values. Lookup will take O(1) as we are using keys to access the values.
 
 ---
-
+```
 # Solution:
 def twoSum(self, nums, target):
         """
