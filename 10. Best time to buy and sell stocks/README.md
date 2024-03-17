@@ -1,46 +1,34 @@
-# Qns : Valid Palindrome https://leetcode.com/problems/valid-palindrome/
+# Qns : Best time to buy and sell stock https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 # Approach:
-1) Process the string by checking if each char is .alnum(), if yes, add them to a new string
-2) then convert the string to lowercase using .lower()
-3) Lastly use two pointer approach, check left and right 
+1) Using two pointers, check if left value is less than right value. If yes, use max() to get maxProfit
+2) If no, this means that left value is larger than right value. thus, it shift left pointer to equal right pointer
+3) when right pointer hits the end of the array, return the max profit
 ---
 
 # Solution:
 ```
-def isPalindrome(self, s):
-        """
-        :type s: str
-        :rtype: bool
-        """
-        new_string = ""
-
-        for char in s:
-            if char.isalnum():
-                new_string += char
-
-        new_string = new_string.lower()
+def maxProfit(self, prices: List[int]) -> int:
         
-        #two pointer approach
-        left = 0
-        right = len(new_string) - 1
+        left, right = 0, 1
+        maxProfit = 0
 
-        while left < right:
-            if new_string[left] == new_string[right]:
-                left += 1
-                right -= 1
+        while right < len(prices):
+            if prices[left] < prices[right]:
+                curProfit = prices[right] - prices[left]
+                maxProfit = max(maxProfit, curProfit)
             else:
-                return False
-
-        print(left, right)
-        return True
+                left = right
+            right += 1
+        
+        return maxProfit 
 ```
 ---
 
 # Time Complexity
 Worst case : O(N)
-Reason is due to the processing of data, have to loop through every single char
+Have to loop through the entire array.
 
 # Space Complexity
-Worst case : O(n)
-We create additional string in memory.
+Worst case : O(1)
+Only store 3 values = left, right and maxProfit
