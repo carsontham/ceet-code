@@ -1,2 +1,4 @@
 # ceet-code
-My personal journey - A solo grind of Leetcode to achieve better understanding and to ace technical interviews
+A solo grind of Leetcode to achieve better understanding and to ace technical interviews
+
+Each question are completed in Python and Go ( i like Go :p)
