@@ -23,12 +23,12 @@
             fast = fast.next
         slow.next = slow.next.next
 
-        return head 
+        return head
 ```
 ---
 
 # Time Complexity
-Time complexity is O(n). Iterate once through the array. 
+Time complexity is O(n). Iterate through the entire linked list in worse case.
 
 # Space Complexity
-Space complexity is O(n). Worse case when all characters are unique.
+Space complexity is O(1). Only kept pointers to fast and slow.

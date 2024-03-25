@@ -11,33 +11,25 @@
 
 # Solution:
 ```
-def rotate(self, nums: List[int], k: int) -> None:
-        """
-        Do not return anything, modify nums in-place instead.
-        """
-        
-        k = k % len(nums)
+    def findMin(self, nums: List[int]) -> int:
         left, right = 0, len(nums) - 1
-
         while left < right:
-            nums[left], nums[right] = nums[right], nums[left]
-            left, right = left+1, right-1
+            mid = (left + right) // 2
 
-        left, right = 0, k - 1
-        while left < right:
-            nums[left], nums[right] = nums[right], nums[left]
-            left, right = left+1, right-1
+            if nums[mid] > nums[right]:
+                left = mid + 1
+            
+            else:
+                right = mid
         
-        left, right = k, len(nums) - 1
-        while left < right:
-            nums[left], nums[right] = nums[right], nums[left]
-            left, right = left+1, right-1
+        return nums[left]
+
 ```
 ---
 
 # Time Complexity
-Time complexity will be O(n).
-We have to loop through the entire array to rotate.
+Time complexity will be O(log n).
+We used divide and conquer strategy.
 
 # Space Complexity
 Space complexity is O(1). we store only additional left and right

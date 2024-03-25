@@ -18,5 +18,5 @@ class Solution:
                 size = right - left + 1
                 maxLength = max(maxLength, size)
 
-        return maxLength    
+        return maxLength
             
