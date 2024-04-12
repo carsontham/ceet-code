@@ -5,4 +5,4 @@ A Leetcode grind to achieve better understanding of algorithms and to ace techni
 
 I realized there's no easy way out, except to master the basics of algorithms. 
 
-#### *Mastery of the basics makes your advanced*
+#### *Mastery of the basics makes you advanced*
