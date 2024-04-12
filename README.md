@@ -1,8 +1,5 @@
 # ceet-code
-A solo grind of Leetcode to achieve better understanding and to ace technical interviews
 
-Aiming to solve Blind 75 
-Currently: 
+Leetcode grind to achieve better understanding of algorithms and to ace technical interviews
 
-
-*Mastery of the basics makes your advanced*
+I saw this quote somewhere and quite liked it - *Mastery of the basics makes your advanced*
