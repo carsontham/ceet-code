@@ -1,5 +1,4 @@
-# Qns : Max Area of Islands https://leetcode.com/problems/number-of-islands/
-
+# Qns : Max Area of Islands https://leetcode.com/problems/max-area-of-island/
 # Approach: using Depth-First-Search
 1) In 2D matrix, iterate through each element. If it's = '1', mark it as '0'.
 2) use a interative approach to mark connecting elements as '0'
